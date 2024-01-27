@@ -17,8 +17,8 @@ class TaskAdmin(admin.ModelAdmin):
         When(priority='Low', then=3),
         default=4,
         output_field=IntegerField(),
-    ),)
-admin.site.site_header = 'Task Manager Admin'
+    ),
+)
 
 admin.site.register(Task, TaskAdmin)
 
